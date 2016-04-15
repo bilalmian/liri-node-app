@@ -1,20 +1,29 @@
-var keys = require('./keys.js');
+var birdKeys = require('./keys.js');
 var fs = require('fs');
 var request = require('request');
 var prompt = require('prompt');
 var Twitter = require('twitter');
 var Spotify = require('spotify');
 
+function liri(command, action){
+	switch(command){
+		case 'twitter': twitter(action); break;
+		case 'spotify': spotify(action); break;
+		case 'omdb': omdb(action); break;
+		case ''
+	}
+}
+
 //Twitter API Function
-function twitter(twitterHandle){
+function twitter(){
 	var client = new Twitter({
-	  consumer_key: keys.twitterKeys.consumer_key,
-	  consumer_secret: keys.twitterKeys.consumer_secret,
-	  access_token_key: keys.twitterKeys.access_token_key,
-	  access_token_secret: keys.twitterKeys.access_token_secret
+	  consumer_key: birdKeys.twitterKeys.consumer_key,
+	  consumer_secret: birdKeys.twitterKeys.consumer_secret,
+	  access_token_key: birdKeys.twitterKeys.access_token_key,
+	  access_token_secret: birdKeys.twitterKeys.access_token_secret
 	});
 	 
-	var params = {screen_name: twitterHandle, count: 20};
+	var params = {screen_name: 'bilal_mian', count: 20};
 	client.get('statuses/user_timeline', params, function(error, tweets, response){
 	  if (!error) {
 	  	console.log("\n---------------------\n");
@@ -54,7 +63,10 @@ function spotify(song){
 
 //OMDB API movie function
 function omdB(movie){
-	if(!movie) {movie = 'Mr. Nobody'};
+	if(!movie){
+		movie = 'Mr. Nobody'
+		console.log("You can catch it on Netflix!");
+	};
 	Request('http://www.omdbapi.com/?t=' + choice + '&y=&plot=short&r=json', function (error, response, body) {
 		if(!error & response.statusCode = 200) {
 			var info = JSON.parse(body)
@@ -75,3 +87,14 @@ function omdB(movie){
 		}
 	});
 }
+
+function doWhatISay(){
+	fs.readFile('random.txt', 'utf8', function(error, data){
+		if (!error) {
+			doArray = data.split(',');
+			liri(doArray[0], doArray[1]);
+		} else {
+			console.log('Error occurred' + error);
+		}
+	});
+};
