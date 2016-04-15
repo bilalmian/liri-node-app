@@ -2,11 +2,11 @@ var keys = require('./keys.js');
 var fs = require('fs');
 var request = require('request');
 var prompt = require('prompt');
+var Twitter = require('twitter');
+var Spotify = require('spotify');
 
 //Twitter API Function
 function twitter(twitterHandle){
-	var Twitter = require('twitter');
-	 
 	var client = new Twitter({
 	  consumer_key: keys.twitterKeys.consumer_key,
 	  consumer_secret: keys.twitterKeys.consumer_secret,
@@ -55,6 +55,23 @@ function spotify(song){
 //OMDB API movie function
 function omdB(movie){
 	if(!movie) {movie = 'Mr. Nobody'};
+	Request('http://www.omdbapi.com/?t=' + choice + '&y=&plot=short&r=json', function (error, response, body) {
+		if(!error & response.statusCode = 200) {
+			var info = JSON.parse(body)
+			console.log("\n---------------------\n");
+			console.log("Title: " + info.Title);
+			console.log("Year: " + info.Year);
+			console.log("IMDB Rating: " + info.imdbRating);
+			console.log("Country: " + info.Country + "\n");
+			console.log("Plot: " + info.Plot);	
+			console.log("Starring: " + info.Actors + "\n");
 
-
+			console.log("Tomato Score: " + info.tomatoUserMeter);
+			console.log("Tomato URL: " + info.tomatoURL);
+			console.log("\n---------------------\n");
+		} else {
+			console.log('Error occurred' + error);
+			return;
+		}
+	});
 }
