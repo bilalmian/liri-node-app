@@ -1,0 +1,314 @@
+INSTRUCTIONS:
+ Enter one of the following commands: 
+
+ SHOW BILAL'S MOST RECENT TWEETS: node liri.js my-tweets
+ SONG INFORMATION: node liri.js spotify-this-song 'song name'
+ LEARN MORE ABOUT A MOVIE: node liri.js movie-this 'movie name'
+ RUN A COMMAND FROM A TEXT FILE: node liri.js do-what-it-says
+---------------------
+Title: Mr. NobodyStarring: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+Year: 2009IMDB Rating: 7.9Country: Belgium, Germany, Canada, France
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Tomato Score: 76Tomato URL: http://www.rottentomatoes.com/m/mr-nobody/
+You can catch it on Netflix!
+---------------------
+
+---------------------
+Title: Jungle BookStarring: Sabu, Joseph Calleia, John Qualen, Frank Puglia
+Year: 1942IMDB Rating: 6.8Country: USA, UK
+Plot: A boy raised by wolves tries to adapt to human village life.
+Tomato Score: N/ATomato URL: N/A
+---------------------
+
+---------------------
+@PontifexTweet #1: Refugees are not numbers, they are people who have faces, names, stories, and need to be treated as such.Created: Sat Apr 16 05:00:05 +0000 2016
+
+---------------------
+@PontifexTweet #2: In the darkest hours of a family’s life, union with Jesus can help avoid a breakup.Created: Fri Apr 15 11:00:06 +0000 2016
+
+---------------------
+@PontifexTweet #3: Love is the only light which can constantly illuminate a world grown dim.Created: Thu Apr 14 11:00:04 +0000 2016
+
+---------------------
+@PontifexTweet #4: The Lord’s presence dwells in families, with all their daily troubles and struggles, joys and hopes.Created: Wed Apr 13 08:00:10 +0000 2016
+
+---------------------
+@PontifexTweet #5: The way of the Church is not to condemn anyone for ever, it is to pour out the balm of God’s mercy.Created: Tue Apr 12 18:00:08 +0000 2016
+
+---------------------
+@PontifexTweet #6: The Church must pattern her behavior after the Son of God who went out to everyone without exception.Created: Tue Apr 12 15:00:11 +0000 2016
+
+---------------------
+@PontifexTweet #7: To understand, forgive, accompany and integrate. That is the mindset which should prevail in the Church.Created: Tue Apr 12 12:00:17 +0000 2016
+
+---------------------
+@PontifexTweet #8: It is essential that children see that prayer is something truly important for their parents.Created: Tue Apr 12 10:00:12 +0000 2016
+
+---------------------
+@PontifexTweet #9: The home is the place where we learn to appreciate the beauty of the faith, to pray and serve our neighbor.Created: Tue Apr 12 08:00:12 +0000 2016
+
+---------------------
+@PontifexTweet #10: The family is where we first learn to listen and share, to be patient and show respect, to help one another.Created: Mon Apr 11 18:00:14 +0000 2016
+
+---------------------
+@PontifexTweet #11: Children are a wonderful gift from God and a joy for parents.Created: Mon Apr 11 15:00:25 +0000 2016
+
+---------------------
+@PontifexTweet #12: Fidelity has to do with patience. Its joys and sacrifices bear fruit as the years go by.Created: Mon Apr 11 12:00:26 +0000 2016
+
+---------------------
+@PontifexTweet #13: To know how to forgive and feel forgiven is a basic experience in family life.Created: Mon Apr 11 10:00:19 +0000 2016
+
+---------------------
+@PontifexTweet #14: The divorced who have entered a new union should be made to feel part of the Church. They are not excommunicated.Created: Mon Apr 11 08:00:24 +0000 2016
+
+---------------------
+@PontifexTweet #15: Open and caring families find a place for the poor.Created: Sun Apr 10 18:00:11 +0000 2016
+
+---------------------
+@PontifexTweet #16: It is important for a child to feel wanted. He or she is not an accessory or a solution to some personal need.Created: Sun Apr 10 15:00:12 +0000 2016
+
+---------------------
+@PontifexTweet #17: Each new life allows us to appreciate the utterly gratuitous dimension of love.Created: Sun Apr 10 12:00:08 +0000 2016
+
+---------------------
+@PontifexTweet #18: Love opens our eyes and enables us to see the great worth of a human being.Created: Sun Apr 10 10:00:11 +0000 2016
+
+---------------------
+@PontifexTweet #19: In our families, we must learn to imitate Jesus’ own gentleness.Created: Sun Apr 10 08:00:07 +0000 2016
+
+---------------------
+@PontifexTweet #20: Every family, despite its weaknesses, can become a light in the darkness of the world.Created: Sat Apr 09 18:00:08 +0000 2016
+
+---------------------
+
+INSTRUCTIONS:
+ Enter one of the following commands: 
+
+ SHOW A USERS MOST RECENT TWEETS: node liri.js my-tweets 'twitter handle'
+ SONG INFORMATION: node liri.js spotify-this-song 'song name'
+ LEARN MORE ABOUT A MOVIE: node liri.js movie-this 'movie name'
+ RUN A COMMAND FROM A TEXT FILE: node liri.js do-what-it-says
+
+INSTRUCTIONS:
+ Enter one of the following commands: 
+
+ SHOW A USERS MOST RECENT TWEETS: node liri.js my-tweets 'twitter handle'
+ SONG INFORMATION: node liri.js spotify-this-song 'song name'
+ LEARN MORE ABOUT A MOVIE: node liri.js movie-this 'movie name'
+ RUN A COMMAND FROM A TEXT FILE: node liri.js do-what-it-says
+
+---------------------
+@JenStayrookTweet #1: @GailSimone ME TOO. AREN'T THEY THE CUTEST.
+Warning: Professional photoshopping abilities can hurt the eyes. https://t.co/4S5CQKksHQCreated: Fri Apr 15 22:40:06 +0000 2016
+
+---------------------
+@JenStayrookTweet #2: OH SHIT YES. KIMMY SCHMIDT IS BACK. Season 2 mofos! #netflixCreated: Fri Apr 15 22:19:52 +0000 2016
+
+---------------------
+@JenStayrookTweet #3: @alwayscoffee @kidell Hm.Created: Fri Apr 15 21:32:07 +0000 2016
+
+---------------------
+@JenStayrookTweet #4: @alwayscoffee Sometimes with poetry I think that's better. It's almost....refreshing to hit restart. Frustrating, of course, but refreshing.Created: Fri Apr 15 21:31:53 +0000 2016
+
+---------------------
+@JenStayrookTweet #5: @GigawattConduit Hamilton doesn't discriminate, between the haters and the fans, it takes and it takes, and we keep listening anyway.Created: Fri Apr 15 20:16:01 +0000 2016
+
+---------------------
+@JenStayrookTweet #6: At the heart of The 100's success stands Raven, so let's talk about her greatness: https://t.co/euCVYsQKWg @linzzmorgan @The100writersCreated: Fri Apr 15 20:03:13 +0000 2016
+
+---------------------
+@JenStayrookTweet #7: @alwayscoffee Phew. Glad to hear that at least.Created: Fri Apr 15 18:36:19 +0000 2016
+
+---------------------
+@JenStayrookTweet #8: @kidell @alwayscoffee The nerve of some kittens these days. They're lucky they're so adorable.Created: Fri Apr 15 18:08:01 +0000 2016
+
+---------------------
+@JenStayrookTweet #9: @alwayscoffee It didn't do an autosave at any point? :(Created: Fri Apr 15 18:04:04 +0000 2016
+
+---------------------
+@JenStayrookTweet #10: @quickmissive SLEEP DEPRIVATION POWERS ACTIVATE.Created: Thu Apr 14 18:17:54 +0000 2016
+
+---------------------
+@JenStayrookTweet #11: @quickmissive I mean I'm drunk off of no sleep but...you are adorable. So.Created: Thu Apr 14 17:59:17 +0000 2016
+
+---------------------
+@JenStayrookTweet #12: @dagnificent DON'T MAKE ME CRY. IT GETS AWKWARD WHEN I CRY.Created: Thu Apr 14 17:58:48 +0000 2016
+
+---------------------
+@JenStayrookTweet #13: @quickmissive NO YOU'RE ADORABLE.Created: Thu Apr 14 17:25:18 +0000 2016
+
+---------------------
+@JenStayrookTweet #14: @dagnificent Aw thank you! You're very kind!Created: Thu Apr 14 17:25:03 +0000 2016
+
+---------------------
+@JenStayrookTweet #15: @linda_grimes d'awwwww shucks. Thanks, Linda. =)Created: Thu Apr 14 16:52:22 +0000 2016
+
+---------------------
+@JenStayrookTweet #16: NONE OF YOU STOPPED ME SO I DID IT. I JUST GOT BANGS. Will I regret this tomorrow? Yes. Do I care right now? Nope. https://t.co/8YlqVexslvCreated: Thu Apr 14 16:46:54 +0000 2016
+
+---------------------
+@JenStayrookTweet #17: @sjaejones https://t.co/lusUWwxYRjCreated: Thu Apr 14 16:01:11 +0000 2016
+
+---------------------
+@JenStayrookTweet #18: RT @NotLikeFreddy: I dunno, guys. What's left to say about an industry that thinks these all count as Asian? https://t.co/ABCIfOftDXCreated: Thu Apr 14 15:41:34 +0000 2016
+
+---------------------
+@JenStayrookTweet #19: RT @MingNa: Nothing against Scarlett Johansson. In fact, I'm a big fan. But everything against this Whitewashing of Asian role.😒 https://t.…Created: Thu Apr 14 15:40:25 +0000 2016
+
+---------------------
+@JenStayrookTweet #20: Considering trimming my hair and my scumbag brain is like, "GASP. OMG. I have the *best* idea! You should get bangs!" 
+Shut up, brain.Created: Thu Apr 14 15:33:06 +0000 2016
+
+---------------------
+
+---------------------
+Artist: Justin BieberSong: BabyAlbum: My World 2.0Preview Url: https://p.scdn.co/mp3-preview/a7457c94f24ced0115c865b325e031ea6fb2a964
+---------------------
+
+---------------------
+Artist: AshantiSong: BabyAlbum: AshantiPreview Url: https://p.scdn.co/mp3-preview/bb7bf001a78919039d32fabfc9e19e32da38f6a1
+---------------------
+
+---------------------
+Artist: Dee RaySong: BabyAlbum: Dj Chillron Presents Rock The Club Vol.1 (Orginal Mix)Preview Url: https://p.scdn.co/mp3-preview/899ce8eaaf299f887ecd29ff02bd856d4b3301e4
+---------------------
+
+---------------------
+Artist: Disco JuiceSong: BabyAlbum: Dubai Liquid GroovePreview Url: https://p.scdn.co/mp3-preview/2d5c8de781577a5de85f5113643f8b0130c78aff
+---------------------
+
+---------------------
+Artist: Club On BlueSong: BabyAlbum: Just Chillout (Finest Selection)Preview Url: https://p.scdn.co/mp3-preview/291e19e9ab58f85bdff25d15bf9a85211218b242
+---------------------
+
+---------------------
+Artist: Mixael PSong: BabyAlbum: Minimal TunesPreview Url: https://p.scdn.co/mp3-preview/60b4604bab56ffdb5074c4fb3da599d930619018
+---------------------
+
+---------------------
+Artist: Vellie MarieSong: BabyAlbum: #KeepGoing: The AlbumPreview Url: https://p.scdn.co/mp3-preview/51989b417d5faac924e860d9994e90b8474bb737
+---------------------
+
+---------------------
+Artist: EminemSong: BabyAlbum: The Marshall Mathers LP2 (Deluxe)Preview Url: https://p.scdn.co/mp3-preview/ca35ece3b3520db12e3294bc3d95e15b9f381114
+---------------------
+
+---------------------
+Artist: Ariel Pink's Haunted GraffitiSong: BabyAlbum: Mature ThemesPreview Url: https://p.scdn.co/mp3-preview/08dc36572cec683a016ee94cf0cc1b9a560d18e6
+---------------------
+
+---------------------
+Artist: Devendra BanhartSong: BabyAlbum: What Will We Be (Standard)Preview Url: https://p.scdn.co/mp3-preview/985b135eb9d8f1cf41f8d9433e4b4f8b3f297176
+---------------------
+
+---------------------
+Title: Captain AmericaStarring: Matt Salinger, Ronny Cox, Ned Beatty, Darren McGavin
+Year: 1990IMDB Rating: 3.3Country: USA, Yugoslavia
+Plot: Frozen in the ice for decades, Captain America is freed to battle against arch-criminal, The Red Skull.
+Tomato Score: 16Tomato URL: http://www.rottentomatoes.com/m/captain-america1990/
+---------------------
+
+---------------------
+Artist: Backstreet BoysSong: I Want It That WayAlbum: The Hits--Chapter OnePreview Url: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6
+---------------------
+
+---------------------
+Artist: Anthem LightsSong: I Want It That WayAlbum: Covers Part IVPreview Url: https://p.scdn.co/mp3-preview/4a163fbfa2dbbe4433f277e0e7395dca656364f5
+---------------------
+
+---------------------
+Artist: Boyce AvenueSong: I Want It That WayAlbum: New Acoustic Sessions, Vol. 3Preview Url: https://p.scdn.co/mp3-preview/764f1dcb8c9a9cec099cc361cb388f931bf023d3
+---------------------
+
+---------------------
+Artist: Dynamite BoySong: I Want It That WayAlbum: Punk Goes PopPreview Url: https://p.scdn.co/mp3-preview/e028b2a49335c72305fe789185bf074b420ffdf4
+---------------------
+
+---------------------
+Artist: Scott Bradlee's Postmodern JukeboxSong: I Want It That WayAlbum: PMJ Is For Lovers: The Love Song CollectionPreview Url: https://p.scdn.co/mp3-preview/53296f4b689baaa0be6d94e8720c044e98d4b3e3
+---------------------
+
+---------------------
+Artist: Steel PantherSong: I Want It That WayAlbum: I Want It That WayPreview Url: https://p.scdn.co/mp3-preview/b71df9d016478a90c09a96ce96c91a65c883f33f
+---------------------
+
+---------------------
+Artist: Landon Austin & Julia SheerSong: I Want It That WayAlbum: I Want It That WayPreview Url: https://p.scdn.co/mp3-preview/e777be5446dc3df34abc2eaec241edb5a590976c
+---------------------
+
+---------------------
+Artist: FROIDZSong: I Want It That WayAlbum: I Want It That WayPreview Url: https://p.scdn.co/mp3-preview/fdf46a47cbaf363ff9379b4222a74d1ba8291b67
+---------------------
+
+---------------------
+Artist: La generación de los 90Song: I Want It That WayAlbum: Ultimate 90's Mix (The Best the 90's Has to Offer)Preview Url: https://p.scdn.co/mp3-preview/7760e05d81cd2bbad5e5d419f23baf13228b6710
+---------------------
+
+---------------------
+Artist: Patent PendingSong: I Want It That WayAlbum: Spring Break '99Preview Url: https://p.scdn.co/mp3-preview/b61cd8b0713737e9880d4fad71e4413c0d26736d
+---------------------
+
+---------------------
+@JenStayrookTweet #1: @GailSimone ME TOO. AREN'T THEY THE CUTEST.
+Warning: Professional photoshopping abilities can hurt the eyes. https://t.co/4S5CQKksHQCreated: Fri Apr 15 22:40:06 +0000 2016
+
+---------------------
+@JenStayrookTweet #2: OH SHIT YES. KIMMY SCHMIDT IS BACK. Season 2 mofos! #netflixCreated: Fri Apr 15 22:19:52 +0000 2016
+
+---------------------
+@JenStayrookTweet #3: @alwayscoffee @kidell Hm.Created: Fri Apr 15 21:32:07 +0000 2016
+
+---------------------
+@JenStayrookTweet #4: @alwayscoffee Sometimes with poetry I think that's better. It's almost....refreshing to hit restart. Frustrating, of course, but refreshing.Created: Fri Apr 15 21:31:53 +0000 2016
+
+---------------------
+@JenStayrookTweet #5: @GigawattConduit Hamilton doesn't discriminate, between the haters and the fans, it takes and it takes, and we keep listening anyway.Created: Fri Apr 15 20:16:01 +0000 2016
+
+---------------------
+@JenStayrookTweet #6: At the heart of The 100's success stands Raven, so let's talk about her greatness: https://t.co/euCVYsQKWg @linzzmorgan @The100writersCreated: Fri Apr 15 20:03:13 +0000 2016
+
+---------------------
+@JenStayrookTweet #7: @alwayscoffee Phew. Glad to hear that at least.Created: Fri Apr 15 18:36:19 +0000 2016
+
+---------------------
+@JenStayrookTweet #8: @kidell @alwayscoffee The nerve of some kittens these days. They're lucky they're so adorable.Created: Fri Apr 15 18:08:01 +0000 2016
+
+---------------------
+@JenStayrookTweet #9: @alwayscoffee It didn't do an autosave at any point? :(Created: Fri Apr 15 18:04:04 +0000 2016
+
+---------------------
+@JenStayrookTweet #10: @quickmissive SLEEP DEPRIVATION POWERS ACTIVATE.Created: Thu Apr 14 18:17:54 +0000 2016
+
+---------------------
+@JenStayrookTweet #11: @quickmissive I mean I'm drunk off of no sleep but...you are adorable. So.Created: Thu Apr 14 17:59:17 +0000 2016
+
+---------------------
+@JenStayrookTweet #12: @dagnificent DON'T MAKE ME CRY. IT GETS AWKWARD WHEN I CRY.Created: Thu Apr 14 17:58:48 +0000 2016
+
+---------------------
+@JenStayrookTweet #13: @quickmissive NO YOU'RE ADORABLE.Created: Thu Apr 14 17:25:18 +0000 2016
+
+---------------------
+@JenStayrookTweet #14: @dagnificent Aw thank you! You're very kind!Created: Thu Apr 14 17:25:03 +0000 2016
+
+---------------------
+@JenStayrookTweet #15: @linda_grimes d'awwwww shucks. Thanks, Linda. =)Created: Thu Apr 14 16:52:22 +0000 2016
+
+---------------------
+@JenStayrookTweet #16: NONE OF YOU STOPPED ME SO I DID IT. I JUST GOT BANGS. Will I regret this tomorrow? Yes. Do I care right now? Nope. https://t.co/8YlqVexslvCreated: Thu Apr 14 16:46:54 +0000 2016
+
+---------------------
+@JenStayrookTweet #17: @sjaejones https://t.co/lusUWwxYRjCreated: Thu Apr 14 16:01:11 +0000 2016
+
+---------------------
+@JenStayrookTweet #18: RT @NotLikeFreddy: I dunno, guys. What's left to say about an industry that thinks these all count as Asian? https://t.co/ABCIfOftDXCreated: Thu Apr 14 15:41:34 +0000 2016
+
+---------------------
+@JenStayrookTweet #19: RT @MingNa: Nothing against Scarlett Johansson. In fact, I'm a big fan. But everything against this Whitewashing of Asian role.😒 https://t.…Created: Thu Apr 14 15:40:25 +0000 2016
+
+---------------------
+@JenStayrookTweet #20: Considering trimming my hair and my scumbag brain is like, "GASP. OMG. I have the *best* idea! You should get bangs!" 
+Shut up, brain.Created: Thu Apr 14 15:33:06 +0000 2016
+
+---------------------

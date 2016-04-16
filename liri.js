@@ -1,4 +1,4 @@
-var birdKeys = require('./keys.js');
+var birdKeys = require('./assets/javascript/keys.js');
 var fs = require('fs');
 var request = require('request');
 var Twitter = require('twitter');
@@ -114,7 +114,7 @@ function omdB(movie){
 }
 
 function doWhatISay(){
-	fs.readFile('random.txt', 'utf8', function(error, data){
+	fs.readFile('assets/text-files/random.txt', 'utf8', function(error, data){
 		if (!error) {
 			doArray = data.split(',');
 			liri(doArray[0], doArray[1]);
@@ -126,7 +126,7 @@ function doWhatISay(){
 
 function log(data){
 	console.log(data);
-	fs.appendFile('log.txt', data, 'utf8', function(error) {
+	fs.appendFile('assets/text-files/log.txt', data, 'utf8', function(error) {
 		if (error) {
 			log('Error occurred' + error);
 		}
