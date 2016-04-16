@@ -14,7 +14,8 @@ Spotify - https://www.npmjs.com/package/spotify
 
 Request - https://www.npmjs.com/package/request
 
-INSTRUCTIONS: 
+INSTRUCTIONS
+
 Enter one of the following commands when running the application in terminal: 
 
 SHOW A USERS MOST RECENT TWEETS: node liri.js my-tweets 'twitter handle'
