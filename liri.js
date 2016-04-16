@@ -1,16 +1,15 @@
 var birdKeys = require('./keys.js');
 var fs = require('fs');
 var request = require('request');
-var prompt = require('prompt');
 var Twitter = require('twitter');
 var Spotify = require('spotify');
 
 function liri(command, action){
 	switch(command){
-		case 'twitter': twitter(action); break;
-		case 'spotify': spotify(action); break;
-		case 'omdb': omdb(action); break;
-		case ''
+		case 'my-tweets': twitter(); break;
+		case 'spotify-this-song': spotify(action); break;
+		case 'movie-this': omdB(action); break;
+		case 'do-what-it-says': doWhatISay(); break;
 	}
 }
 
@@ -31,8 +30,9 @@ function twitter(){
 	  			console.log("@" + tweets[i].user.screen_name);
 		      	console.log("Tweet " + "#" + (i + 1) + ": " + tweets[i].text);
 		      	console.log("Created: " + tweets[i].created_at + "\n");
+		      	console.log("\n---------------------\n");
 		  	}
-		console.log("\n---------------------\n");
+		
 	  }
 	});
 }
@@ -47,10 +47,12 @@ function spotify(song){
 	    if (!err) {
 	        for (var i = 0; i < 10; i++) {
 	        	if (data.tracks.items[i] != undefined) {
+	        		console.log("\n---------------------\n");
 			    	console.log('Artist: ' + data.tracks.items[i].artists[0].name)//Artist name
 			    	console.log('Song: ' + data.tracks.items[i].name)//Song name
 			    	console.log('Album: ' + data.tracks.items[i].album.name)//Album name
 			    	console.log('Preview Url: ' + data.tracks.items[i].preview_url)//Preview URL
+			    	console.log("\n---------------------\n");
 			    }
 	        }
 
@@ -67,17 +69,16 @@ function omdB(movie){
 		movie = 'Mr. Nobody'
 		console.log("You can catch it on Netflix!");
 	};
-	Request('http://www.omdbapi.com/?t=' + choice + '&y=&plot=short&r=json', function (error, response, body) {
-		if(!error & response.statusCode = 200) {
+	request('http://www.omdbapi.com/?t=' + movie + '&y=&plot=short&tomatoes=true&r=json', function (error, response, body) {
+		if(!error && response.statusCode == 200) {
 			var info = JSON.parse(body)
 			console.log("\n---------------------\n");
 			console.log("Title: " + info.Title);
+			console.log("Starring: " + info.Actors + "\n");
 			console.log("Year: " + info.Year);
 			console.log("IMDB Rating: " + info.imdbRating);
 			console.log("Country: " + info.Country + "\n");
-			console.log("Plot: " + info.Plot);	
-			console.log("Starring: " + info.Actors + "\n");
-
+			console.log("Plot: " + info.Plot+ "\n");	
 			console.log("Tomato Score: " + info.tomatoUserMeter);
 			console.log("Tomato URL: " + info.tomatoURL);
 			console.log("\n---------------------\n");
@@ -98,3 +99,5 @@ function doWhatISay(){
 		}
 	});
 };
+
+liri(process.argv[2], process.argv[3]);
