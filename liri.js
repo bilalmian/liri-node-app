@@ -6,15 +6,19 @@ var Spotify = require('spotify');
 
 function liri(command, action){
 	switch(command){
-		case 'my-tweets': twitter(); break;
+		case 'my-tweets': twitter(action); break;
 		case 'spotify-this-song': spotify(action); break;
 		case 'movie-this': omdB(action); break;
 		case 'do-what-it-says': doWhatISay(); break;
+		default: log("\nINSTRUCTIONS:\n Enter one of the following commands: \n\n SHOW A USERS MOST RECENT TWEETS: node liri.js my-tweets 'twitter handle'\n SONG INFORMATION: node liri.js spotify-this-song 'song name'\n LEARN MORE ABOUT A MOVIE: node liri.js movie-this 'movie name'\n RUN A COMMAND FROM A TEXT FILE: node liri.js do-what-it-says\n");
 	}
 }
 
 //Twitter API Function
-function twitter(){
+function twitter(handle){
+	if (!handle){
+		handle = 'bilal_mian';
+	}
 	var client = new Twitter({
 	  consumer_key: birdKeys.twitterKeys.consumer_key,
 	  consumer_secret: birdKeys.twitterKeys.consumer_secret,
@@ -22,71 +26,91 @@ function twitter(){
 	  access_token_secret: birdKeys.twitterKeys.access_token_secret
 	});
 	 
-	var params = {screen_name: 'bilal_mian', count: 20};
+	var params = {screen_name: handle, count: 20};
 	client.get('statuses/user_timeline', params, function(error, tweets, response){
 	  if (!error) {
-	  	console.log("\n---------------------\n");
-	  		for (var i = 0; i < params.count; i++) {
-	  			console.log("@" + tweets[i].user.screen_name);
-		      	console.log("Tweet " + "#" + (i + 1) + ": " + tweets[i].text);
-		      	console.log("Created: " + tweets[i].created_at + "\n");
-		      	console.log("\n---------------------\n");
-		  	}
-		
+	  	log("\n---------------------\n");
+  		for (var i = 0; i < params.count; i++) {
+  			log("@" + tweets[i].user.screen_name);
+	      	log("Tweet " + "#" + (i + 1) + ": " + tweets[i].text);
+	      	log("Created: " + tweets[i].created_at + "\n");
+	      	log("\n---------------------\n");
+	  	}
 	  }
 	});
 }
 
 //Spotify API Function
 function spotify(song){
-	if (!song) {song = 'Whats my age again'};
+	if (!song) {
+		song = 'Whats my age again';
+	};
 
 	var spotify = require('spotify');
 	 
-	spotify.search({ type: 'track', query: song}, function(err, data) {
+	spotify.search({type: 'track', query: song}, function(err, data) {
 	    if (!err) {
 	        for (var i = 0; i < 10; i++) {
 	        	if (data.tracks.items[i] != undefined) {
-	        		console.log("\n---------------------\n");
-			    	console.log('Artist: ' + data.tracks.items[i].artists[0].name)//Artist name
-			    	console.log('Song: ' + data.tracks.items[i].name)//Song name
-			    	console.log('Album: ' + data.tracks.items[i].album.name)//Album name
-			    	console.log('Preview Url: ' + data.tracks.items[i].preview_url)//Preview URL
-			    	console.log("\n---------------------\n");
-			    }
-	        }
+	        		log("\n---------------------\n");
+			    	log('Artist: ' + data.tracks.items[i].artists[0].name)//Artist name
+			    	log('Song: ' + data.tracks.items[i].name)//Song name
+			    	log('Album: ' + data.tracks.items[i].album.name)//Album name
+			    	log('Preview Url: ' + data.tracks.items[i].preview_url)//Preview URL
+			    	log("\n---------------------\n");
+			    };
+	        };
 
 	    } else {
-	    	console.log('Error occurred: ' + err);
-	        return;
-	    }
+	    	log('Error occurred: ' + err);
+	    
+	    };
 	});
-}
+};
 
 //OMDB API movie function
 function omdB(movie){
 	if(!movie){
 		movie = 'Mr. Nobody'
-		console.log("You can catch it on Netflix!");
-	};
-	request('http://www.omdbapi.com/?t=' + movie + '&y=&plot=short&tomatoes=true&r=json', function (error, response, body) {
+		request('http://www.omdbapi.com/?t=' + movie + '&y=&plot=short&tomatoes=true&r=json', function (error, response, body) {
 		if(!error && response.statusCode == 200) {
 			var info = JSON.parse(body)
-			console.log("\n---------------------\n");
-			console.log("Title: " + info.Title);
-			console.log("Starring: " + info.Actors + "\n");
-			console.log("Year: " + info.Year);
-			console.log("IMDB Rating: " + info.imdbRating);
-			console.log("Country: " + info.Country + "\n");
-			console.log("Plot: " + info.Plot+ "\n");	
-			console.log("Tomato Score: " + info.tomatoUserMeter);
-			console.log("Tomato URL: " + info.tomatoURL);
-			console.log("\n---------------------\n");
+			log("\n---------------------\n");
+			log("Title: " + info.Title);
+			log("Starring: " + info.Actors + "\n");
+			log("Year: " + info.Year);
+			log("IMDB Rating: " + info.imdbRating);
+			log("Country: " + info.Country + "\n");
+			log("Plot: " + info.Plot + "\n");	
+			log("Tomato Score: " + info.tomatoUserMeter);
+			log("Tomato URL: " + info.tomatoURL + "\n");
+			log("You can catch it on Netflix!");
+			log("\n---------------------\n");
 		} else {
-			console.log('Error occurred' + error);
-			return;
+			log('Error occurred' + error);
 		}
 	});
+		
+	} else {
+		request('http://www.omdbapi.com/?t=' + movie + '&y=&plot=short&tomatoes=true&r=json', function (error, response, body) {
+			if(!error && response.statusCode == 200) {
+				var info = JSON.parse(body)
+				log("\n---------------------\n");
+				log("Title: " + info.Title);
+				log("Starring: " + info.Actors + "\n");
+				log("Year: " + info.Year);
+				log("IMDB Rating: " + info.imdbRating);
+				log("Country: " + info.Country + "\n");
+				log("Plot: " + info.Plot+ "\n");	
+				log("Tomato Score: " + info.tomatoUserMeter);
+				log("Tomato URL: " + info.tomatoURL);
+				log("\n---------------------\n");
+			} else {
+				log('Error occurred' + error);
+
+			}
+		});
+	}
 }
 
 function doWhatISay(){
@@ -95,9 +119,18 @@ function doWhatISay(){
 			doArray = data.split(',');
 			liri(doArray[0], doArray[1]);
 		} else {
-			console.log('Error occurred' + error);
+			log('Error occurred' + error);
 		}
 	});
+};
+
+function log(data){
+	console.log(data);
+	fs.appendFile('log.txt', data, 'utf8', function(error) {
+		if (error) {
+			log('Error occurred' + error);
+		}
+	})
 };
 
 liri(process.argv[2], process.argv[3]);
