@@ -1,9 +1,15 @@
+// Importing Twitter API keys
 var birdKeys = require('./assets/javascript/keys.js');
 var fs = require('fs');
+// Request node package used for omdB function
 var request = require('request');
+// Twitter node package used for twitter function
 var Twitter = require('twitter');
+// Spotify node package used for spotify function
 var Spotify = require('spotify');
 
+
+// Function that looks for and executes liri's command and search 
 function liri(command, action){
 	switch(command){
 		case 'my-tweets': twitter(action); break;
@@ -112,7 +118,7 @@ function omdB(movie){
 		});
 	}
 }
-
+// Executes function in random.txt file
 function doWhatISay(){
 	fs.readFile('assets/text-files/random.txt', 'utf8', function(error, data){
 		if (!error) {
@@ -124,6 +130,7 @@ function doWhatISay(){
 	});
 };
 
+// Function to console.log results in Terminal and Append to Log.txt
 function log(data){
 	console.log(data);
 	fs.appendFile('assets/text-files/log.txt', data, 'utf8', function(error) {
@@ -133,4 +140,5 @@ function log(data){
 	})
 };
 
+// Execution of the liri function where process.argv[2] listens for the command and process.argv[3] is a user provided search term
 liri(process.argv[2], process.argv[3]);
